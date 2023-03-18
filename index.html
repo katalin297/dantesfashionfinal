@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css"> <!-- main css -->
+  <link rel="stylesheet" href="css/all.css"> <!-- font awesome -->
+  <title>Dante's Fashion</title>
+</head>
+
+<body>
+  <header>
+    <!-- navbar  -->
+    <section id="header">
+    <nav class="navbar navbar-expand-lg px-4 sticky ">
+      <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+      <div class="collapse navbar-collapse" id="myNav">
+        <ul class="navbar-nav mx-auto text-capitalize">
+          <li class="nav-item mx-2 "><a class="nav-link" href="#header">Acasă</a></li>
+          <li class="nav-item mx-2"><a class="nav-link " href="#about">Despre</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#store">Magazin</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#services">Servicii</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="#order">Comenzi</a></li>
+        </ul>
+        <div class="nav-info-items d-none d-lg-flex ">
+          <div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+            <span class="info-icon mx-lg-3"><a href="tel: +373 68 22 22 04"><i class="fas fa-phone black"></i></a></span>
+            <a href="tel: +373 68 22 22 04"><p class="mb-0 black text-reset">+373 68 22 22 04</p> </a>
+          </div>
+        </div>
+      </div>
+      <div class="navbar-nav text-capitalize">
+        <div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between">
+          <span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+          <p class="mb-0 text-capitalize"><span id="item-count">0 </span> articole - <span class="item-total">0.00</span> MDL
+          </p>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav -->
+    <!-- banner  -->
+    <div class="container-fluid">
+      <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+          <h1 class="text-capitalize"><span class="outline">Bun venit la</span> <strong class="banner-title ">Dante's Fashion</strong></h1>
+          <a href="#store" class="btn banner-link text-uppercase my-2">descoperă</a>
+        </div>
+        </section>
+        <div id="cart" class="cart">
+          <!-- cart total -->
+          <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+            <h5>total</h5>
+            <h5><strong id="cart-total" class="font-weight-bold">0.00</strong> MDL</h5>
+          </div>
+          <!-- end cart total -->
+          <!-- cart buttons -->
+          <div class="cart-buttons-container mt-3 d-flex justify-content-between btn-toolbar">
+            <a id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">golire coș</a>
+            <a href="./payment-form.html" class="btn btn-outline-secondary text-uppercase btn-blue">checkout</a>
+          </div>
+          <!--end cart buttons -->
+        </div>
+      </div>
+    </div>
+    <!--end banner  -->
+  </header>
+  <!-- about us -->
+  <section class="about py-5" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-10 mx-auto col-md-6 my-5">
+          <h1 class="text-capitalize">despre <strong class="banner-title ">noi</strong></h1>
+          <p class="my-4 text-muted w-75">Dante's Fashion este o companie de haine personalizate din Chișinău, Moldova 📍 <br>
+          Noi creăm articole vestimentare personalizate la comandă 📩</p>
+          <a href="#store" class="btn btn-outline-secondary btn-black text-uppercase ">Descoperă</a>
+        </div>
+        <div class="col-10 mx-auto col-md-6 align-self-center my-5">
+          <div class="about-img__container">
+            <img src="./img/danteFashionLoggo2.png" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end about us -->
+  <!-- store -->
+  <section id="store" class="store py-5">
+    <div class="container">
+      <!-- section title -->
+      <div class="row">
+        <div class="col-10 mx-auto col-sm-6 text-center">
+          <h1 class="text-capitalize">
+            <strong class="banner-title ">colecția</strong> noastră</h1>
+        </div>
+      </div>
+      <!-- end section title -->
+      <!-- filter buttons -->
+      <div class="row">
+        <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
+          <a class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> toate</a>
+          <a class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="hoodie">hanorace</a>
+          <a class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="tshirt">tricouri</a>
+          <a class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="bag">genți</a>
+      </div>
+      <!-- end filter buttons -->
+      <!-- store items -->
+      <div class="row" class="store-items" id="store-items">
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="hoodie">
+          <div id="001" class="card">
+            <div class="img-container">
+              <img src="./img/hoodie1.png" class="card-img-top store-img" alt="" />
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Hanorac (1)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 380</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="hoodie">
+          <div id="002" class="card ">
+            <div class="img-container">
+              <img src="./img/hoodie2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Hanorac (2)</h5>
+               <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 380</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="hoodie">
+          <div id="003" class="card ">
+            <div class="img-container">
+              <img src="./img/hoodie3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Hanorac (3)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 380</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="tshirt">
+          <div id="004" class="card ">
+            <div class="img-container">
+              <img src="./img/tshirt1.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">tricou (1)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 190</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="tshirt">
+          <div id="005" class="card ">
+            <div class="img-container">
+              <img src="./img/tshirt2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">tricou (2)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 190</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cupcakes" data-item="tshirt">
+          <div id="006" class="card ">
+            <div class="img-container">
+              <img src="./img/tshirt3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">tricou (3)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 190</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item cakes" data-item="bag">
+          <div id="007" class="card ">
+            <div class="img-container">
+              <img src="./img/bag1.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Geantă (1)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 130</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item doughnuts" data-item="bag">
+          <div id="008" class="card ">
+            <div class="img-container">
+              <img src="./img/bag2.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Geantă (2)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 130</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+        <!-- item -->
+        <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="bag">
+          <div id="009" class="card ">
+            <div class="img-container">
+              <img src="./img/bag3.png" class="card-img-top store-img" alt="">
+              <span class="store-item-icon">
+                <i class="fas fa-shopping-cart"></i>
+              </span>
+            </div>
+            <div class="card-body">
+              <div class="card-text d-flex justify-content-between text-capitalize">
+                <h5 id="store-item-name">Geantă (3)</h5>
+                <h5 class="store-item-value"><strong id="store-item-price" class="font-weight-bold"> 130</strong> MDL</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end item -->
+      </div>
+      <!--end store items -->
+    </div>
+  </section>
+    <!-- end store section -->
+    <!-- service section -->
+    <section id="services" class="services py-5">
+        <div class="container">
+            <div class="row">
+                <!-- service -->
+                <div class="col-md-4 my-3 text-center">
+                    <img src="./img/cotton-icon.png" alt="">
+                    <h5 class="text-capitalize service-title my-3">material</h6>
+                    <p class="service-text w-75 mx-auto">Produsele noastre sunt fabricate din 50% bumbac / 50% poliester pentru comoditate sporită.</p>
+                </div>
+                <!-- end service -->
+                <!-- service -->
+                <div class="col-md-4 my-3 text-center">
+                    <img src="./img/wash-icon.png" alt="">
+                    <h5 class="text-capitalize service-title my-3">întreținere</h6>
+                    <p class="service-text w-75 mx-auto">Calitatea înaltă a produselor permit spălarea și folosirea acestora pentru o durată lungă de timp fără deteriorare.</p>
+                </div>
+                <!-- end ervice -->
+                <!-- service -->
+                <div class="col-md-4 my-3 text-center">
+                    <img src="./img/phone-icon.png" alt="">
+                    <h5 class="text-capitalize service-title my-3">clientelă</h6>
+                    <p class="service-text w-75 mx-auto">Suntem gata să vă ajutăm oricând aveți nevoie. <br>
+                    +373 68 22 22 04</p>
+                </div>
+                <!-- end service -->
+            </div>
+        </div>
+    </section>
+    <!-- end service section -->
+
+    <!-- order section -->
+    <section id="order" class="order py-5">
+        <div class="container">
+            <!-- section title -->
+            <div class="row">
+                <div class="col-10 col-sm-6 mx-auto text-center">
+                    <!-- store title -->
+                    <h1 class="text-capitalize"><strong class="banner-title">Articole </strong>Personalizate</h1>
+                    <!-- store title end -->
+                </div>
+            </div>
+            <!-- end section title -->
+            <div class="row">
+                <!-- order -->
+                <div class="col-11 col-md-6 col-lg-4 mx-auto text-capitalize text-center my-4">
+                    <h3 class="py-3">
+                        hanorac personalizat
+                    </h3>
+                    <div class="text-muted">
+                        <p class="m-3">design personalizat</p>
+                        <p class="m-3">orice imprimeu</p>
+                        <a href="https://www.instagram.com/dante.fashion_/" target="_blank"><button type="button" class="btn btn-blue text-capitalize mb-3">comandă acum</button></a>
+                        <p class="mb-4 text-lowercase">
+                            începând cu 380 
+                            <span class="text-capitalize">MDL</span>
+                        </p>
+                        <img src="./img/sweatshirt.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- end  order -->
+                <!-- order -->
+                <div class="col-11 col-md-6 col-lg-4 mx-auto text-capitalize text-center my-4">
+                    <h3 class="py-3">
+                        tricou personalizat
+                    </h3>
+                    <div class="text-muted">
+                        <p class="m-3">design personalizat</p>
+                        <p class="m-3">orice imprimeu</p>
+                        <a href="https://www.instagram.com/dante.fashion_/" target="_blank"><button type="button" class="btn btn-blue text-capitalize mb-3">comandă acum</button></a>
+                        <p class="mb-4 text-lowercase">
+                            începând cu 190 
+                            <span class="text-capitalize">MDL</span>
+                        </p>
+                        <img src="./img/tshirt.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- end order -->
+                <!-- order -->
+                <div class="col-11 col-md-6 col-lg-4 mx-auto text-capitalize text-center my-4">
+                    <h3 class="py-3">
+                        geantă personalizată
+                    </h3>
+                    <div class="text-muted">
+                        <p class="m-3">design personalizat</p>
+                        <p class="m-3">orice imprimeu</p>
+                        <a href="https://www.instagram.com/dante.fashion_/" target="_blank"><button type="button" class="btn btn-blue text-capitalize mb-3">comandă acum</button></a>
+                        <p class="mb-4 text-lowercase">
+                            începând cu 130 
+                            <span class="text-capitalize">MDL</span>
+                        </p>
+                        <img src="./img/bag.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <!-- end order -->
+            </div>
+        </div>
+    </section>
+    <!-- end order section -->
+  <!-- footer -->
+  <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 footer-title p-5">
+                    <h1 class="text-capitalize text-center">
+                        <strong class="banner-title">Dante's Fashion</strong>
+                    </h1>
+                    <div class="footer-icons mt-5 justify-content-around d-flex flex-wrap">
+                        <a href="https://www.facebook.com/profile.php?id=100087751248113" target="_blank" class="
+                        footer-icon"> <i class="fab fa-facebook"></i> 
+                        </a>
+                        <a href="https://www.instagram.com/dante.fashion_/" target="_blank" class="footer-icon"> <i class="fab fa-instagram"></i> 
+                        </a>
+                        <a href="https://twitter.com/DantesFashion44" target="_blank" class="
+                        footer-icon"> <i class="fab fa-twitter"></i> 
+                        </a>
+                        <a href="mailto: dantefashion@gmail.com?subject=Dante's%20Fashion%20&body=Trimiteți%20detalii%20cu%20produsele%20voastre." target="_blank" class="
+                        footer-icon"> <i class="fab fa-google-plus"></i> 
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 text-capitalize text-center footer-contact p-5">
+                    <h3 class="mb-5">contact</h3>
+                    <p class="d-flex flex-wrap">
+                        <a href="https://www.google.com/maps/place/Liceul+Teoretic+%E2%80%9EDante+Alighieri%E2%80%9D/@47.0256731,28.7887342,18z/data=!4m6!3m5!1s0x40c97de6ca1af291:0x2d81659a958cd6c8!8m2!3d47.0263505!4d28.7878247!16s%2Fg%2F1tg_dkbn" target="_blank"><span class="mr-4 footer-icon"> <i class="fas fa-map"></i></span></a>
+                        strada Ion Creangă 80, Chișinău
+                    </p>
+                    <p class="d-flex flex-wrap">
+                        <span class="mr-4"> <a href="tel: +373 68 22 22 04"><i class="white footer-icon fas fa-phone"></i></a></span>
+                        +373 68 22 22 04
+                    </p>
+                    <p class="d-flex flex-wrap">
+                        <span class="mr-4"> <a href="mailto: dantefashion@gmail.com?subject=Dante's%20Fashion%20&body=Trimiteți%20detalii%20cu%20produsele%20voastre." target="_blank"><i class="white footer-icon fas fa-envelope"></i></a></span>
+                        dantefashion@gmail.com
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+  <!-- end footer -->
+  <!-- confirmation pop-up -->
+  <div id="confirmation" class="">
+    <p>Articolul a fost adăugat în coș cu succes</p>
+  </div>
+  <!-- end confirmation pop-up -->
+
+  <!-- scripts -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- end scripts -->
+</body>
+</html>
